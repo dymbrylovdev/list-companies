@@ -1,0 +1,19 @@
+.container {
+  flex: 1;
+  overflow-y: scroll;
+  overflow-x: scroll;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form_input {
+  padding: 0.5em;
+  margin: 1em;
+}
+
+.wrap_buttons {
+  margin: 1em 0;
+}

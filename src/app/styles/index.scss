@@ -1,0 +1,30 @@
+@import "./reset";
+@import "variables/global";
+@import "./themes/dark";
+@import "./themes/light";
+
+.app {
+  font: var(--font-l);
+  height: 100vh;
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+}
+
+.container-content {
+  display: flex;
+}
+
+.page-wrapper {
+  flex-grow: 1;
+  height: 100vh;
+  overflow: scroll;
+}
+
+td {
+  text-align: center;
+  padding: 0 10px;
+}
+
+th {
+  padding: 0 10px;
+}

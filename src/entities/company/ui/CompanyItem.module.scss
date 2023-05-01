@@ -1,0 +1,16 @@
+.container {
+  border-bottom: 1px solid  var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.text_name {
+  font-size: 14px;
+}
+
+.text_address {
+  font-size: 16px;
+  font-weight: 900;
+}

@@ -1,0 +1,18 @@
+{
+  "TEST": "test",
+  "LANG": "Lang",
+  "TOGGLE": "Toggle",
+  "MAIN": "main",
+  "CARD": "card",
+  "NOT_FOUND": "not found page",
+  "NAME": "Name",
+  "ADDRESS": "Address",
+  "COUNT_EMPLOYEES": "Count",
+  "CHOOSE": "Choose",
+  "LAST_NAME": "Last Name",
+  "POSITION": "Position",
+  "REMOVE": "Remove",
+  "ADD": "Add",
+  "EDIT": "Edit",
+  "SELECT_ALL": "Select all"
+}
