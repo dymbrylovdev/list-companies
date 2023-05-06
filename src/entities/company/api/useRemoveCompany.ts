@@ -17,14 +17,15 @@ export const useRemoveCompany = (companies: ICompany[]) : [(() => Promise<void>)
           const storeCompanies: ICompany[] = JSON.parse(localStorage.getItem(COMPANY_LOCALSTORAGE_KEY));
 
           const filterCompanies: ICompany[] = storeCompanies
-            .filter((company) => companies.some((selectCompany) => selectCompany.id !== company.id));
+            .filter((company) => !companies.some((selectCompany) => selectCompany.id === company.id));
+
+          localStorage.setItem(COMPANY_LOCALSTORAGE_KEY, JSON.stringify(filterCompanies));
 
           companies.forEach((companySelect) => {
             dispatch(companyActions.removeSelectCompany(companySelect));
             dispatch(companyActions.removeCompany(companySelect));
           });
 
-          localStorage.setItem(COMPANY_LOCALSTORAGE_KEY, JSON.stringify(filterCompanies));
           setLoading(false);
         }, 1000);
       }

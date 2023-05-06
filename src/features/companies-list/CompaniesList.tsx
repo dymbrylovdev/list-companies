@@ -93,8 +93,9 @@ const CompaniesList = () => {
         }
       } else {
         const formData = new FormData(form);
+        const lastId = companies[companies.length - 1]?.id || 1;
         const company: ICompany = {
-          id: companies[companies.length - 1].id + 1,
+          id: lastId,
           name: formData.get("name") as string,
           address: formData.get("address") as string,
           idEmployees: [],
